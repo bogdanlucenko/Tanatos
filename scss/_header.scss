@@ -54,7 +54,7 @@
   }
 }
 
-.fa-circle-down {
+.circle-down {
   @include rem(font-size, 40);
   color: white;
   display: block;
@@ -316,29 +316,26 @@
     &__top {
       padding-top: 20px;
     }
-  
+
     &__content {
-  
       &-inner {
         padding: 180px 0 0px;
       }
-  
+
       &-btns {
         margin: 100px 0 245px;
       }
     }
-  
+
     &__content-title {
       margin: 0;
       @include rem(font-size, 70);
     }
-  
+
     &__content-description {
       color: white;
       @include rem(font-size, 25);
       line-height: 60px;
     }
   }
-
-
 }

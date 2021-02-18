@@ -41,7 +41,7 @@
   line-height: 40px;
 }
 
-.fa-circle-down {
+.circle-down {
   font-size: 2.8571428571rem;
   color: white;
   display: block;
@@ -533,14 +533,14 @@
 .ourteam__content-item:hover .ourteam__content-desk {
   color: black;
 }
-.ourteam__content-item:hover .fa-facebook {
-  color: #0000da;
+.ourteam__content-item:hover .facebook {
+  color: #205b9f;
 }
-.ourteam__content-item:hover .fa-twitter {
-  color: #d81919;
+.ourteam__content-item:hover .twitter {
+  color: #00ace3;
 }
-.ourteam__content-item:hover .fa-google-plus {
-  color: #008cff;
+.ourteam__content-item:hover .google-plus {
+  color: #ff3921;
 }
 .ourteam__content-img {
   width: 235px;
@@ -607,30 +607,6 @@
   transform: scale(1.5);
 }
 
-.fa-facebook {
-  transition: 0.2s;
-  display: inline-flex;
-}
-.fa-facebook:hover {
-  transform: scale(1.3);
-}
-
-.fa-google-plus {
-  transition: 0.2s;
-  display: inline-flex;
-}
-.fa-google-plus:hover {
-  transform: scale(1.3);
-}
-
-.fa-twitter {
-  transition: 0.2s;
-  display: inline-flex;
-}
-.fa-twitter:hover {
-  transform: scale(1.3);
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -689,6 +665,198 @@
     max-width: 300px;
   }
 }
+.contacts {
+  background-image: linear-gradient(to bottom, rgba(44, 44, 44, 0.938) 100%, black 100%), url(../images/contacts-bg.png);
+  background-color: #3b434c;
+  background-size: cover;
+}
+.contacts__header {
+  padding: 100px 170px 0px;
+}
+.contacts__header-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
+.contacts__header-desk {
+  font-size: 1.1428571429rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.contacts__content {
+  margin-top: 100px;
+  padding: 0px 170px 140px;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contacts__input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 0px;
+  outline: none;
+  margin-bottom: 30px;
+}
+.contacts__btn {
+  cursor: pointer;
+  width: 210px;
+  height: 50px;
+  font-size: 1.1428571429rem;
+  color: white;
+  border-radius: 10px;
+  background-color: #f7600e;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+.contacts__btn:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.input__email {
+  width: 385px;
+  flex: 0 1 50%;
+  margin-right: 30px;
+}
+.input__name {
+  width: 385px;
+  flex: 0 1 50%;
+}
+.input__text {
+  width: 830px;
+  height: 200px;
+  margin: 0 auto;
+  resize: none;
+}
+
+.social {
+  margin-top: 7px;
+  font-size: 2.8571428571rem;
+  align-items: center;
+  word-spacing: 20px;
+}
+
+.facebook-foot {
+  color: #205b9f;
+}
+
+.twitter-foot {
+  color: #00ace3;
+}
+
+.google-plus-foot {
+  color: #ff3921;
+}
+
+.dribble-foot {
+  color: #ff72a5;
+}
+
+.behance-foot {
+  color: #009bd5;
+}
+
+@media (max-width: 1223px) {
+  .contacts__content {
+    padding: 0px 80px 140px;
+  }
+
+  .input__email {
+    margin-right: 0;
+  }
+
+  .input__text {
+    width: 650px;
+  }
+}
+@media (max-width: 992px) {
+  .contacts__header {
+    padding: 50px 40px 0;
+  }
+
+  .contacts__content {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 40px 40px;
+  }
+
+  .input__text {
+    width: 450px;
+  }
+
+  .contacts__item {
+    flex-direction: column;
+  }
+
+  .contacts__btn {
+    margin: 0 auto;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__header-title {
+    font-size: 2.1428571429rem;
+  }
+
+  .contacts__header-desk {
+    font-size: 1.0714285714rem;
+  }
+
+  .input__text {
+    width: 200px;
+    height: 100px;
+  }
+
+  .input__email {
+    width: 200px;
+  }
+
+  .input__name {
+    width: 200px;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 46px 240px;
+  background-color: #3b434c;
+}
+.footer__item {
+  font-weight: 400;
+  font-size: 1.1428571429rem;
+  color: white;
+}
+.footer__logo {
+  vertical-align: middle;
+}
+
+@media (max-width: 1223px) {
+  .footer {
+    padding: 30px 100px;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 50px;
+  }
+  .footer__item {
+    font-size: 1rem;
+  }
+}
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -698,6 +866,14 @@ html {
 a {
   text-decoration: none;
   color: #3b434c;
+}
+
+i {
+  transition: 0.2s;
+  display: inline-flex;
+}
+i:hover {
+  transform: scale(1.3);
 }
 
 span {
