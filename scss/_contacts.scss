@@ -74,13 +74,12 @@
 .input {
   &__email {
     width: 385px;
-    flex: 0 1 50%;
+
     margin-right: 30px;
   }
 
   &__name {
     width: 385px;
-    flex: 0 1 50%;
   }
 
   &__text {
@@ -139,6 +138,12 @@
     margin-top: 40px;
     padding: 0 40px 40px;
   }
+  .input__email {
+    width: 450px;
+  }
+  .input__name {
+    width: 450px;
+  }
   .input__text {
     width: 450px;
   }
@@ -150,6 +155,7 @@
   }
   .social {
     margin-top: 30px;
+    word-spacing: 55px;
   }
 }
 
@@ -169,5 +175,8 @@
   }
   .input__name {
     width: 200px;
+  }
+  .social {
+    word-spacing: 20px;
   }
 }
